@@ -10,6 +10,18 @@ Payload plugin.
 
 ## Install
 
+### Already using `@zubricks/payload-admin-ui-themes`
+
+Install only the Dracula theme package:
+
+```bash
+pnpm add @zubricks/payload-admin-theme-dracula
+```
+
+### Starting without either package
+
+Install the core Admin UI themes plugin and the Dracula theme package together:
+
 ```bash
 pnpm add @zubricks/payload-admin-ui-themes @zubricks/payload-admin-theme-dracula
 ```
@@ -19,13 +31,12 @@ pnpm add @zubricks/payload-admin-ui-themes @zubricks/payload-admin-theme-dracula
 ```ts
 import { draculaTheme } from "@zubricks/payload-admin-theme-dracula";
 import { payloadAdminUIThemes } from "@zubricks/payload-admin-ui-themes";
-import { stockTheme } from "@zubricks/payload-admin-ui-themes/themes/stock";
 
 export default buildConfig({
   plugins: [
     payloadAdminUIThemes({
       defaultTheme: "dracula",
-      themes: [stockTheme, draculaTheme],
+      themes: [draculaTheme],
     }),
   ],
 });
