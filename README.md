@@ -1,3 +1,5 @@
+<img width="1280" height="779" alt="payload-admin-dracula-theme" src="https://github.com/user-attachments/assets/07828e9e-b33d-468c-a121-9e73898a2550" />
+
 # @zubricks/payload-admin-theme-dracula
 
 Dracula Admin UI theme for Payload 4. Dark mode uses Dracula Classic, while light mode uses its
