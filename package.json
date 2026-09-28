@@ -1,0 +1,56 @@
+{
+  "name": "@zubricks/payload-admin-theme-dracula",
+  "version": "0.1.0",
+  "description": "Dracula and Alucard Admin UI theme for Payload",
+  "license": "MIT",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    },
+    "./client": {
+      "types": "./dist/client.d.ts",
+      "import": "./dist/client.js",
+      "default": "./dist/client.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE.md"
+  ],
+  "sideEffects": [
+    "**/*.css"
+  ],
+  "scripts": {
+    "build": "pnpm clean && tsc -p tsconfig.build.json && copyfiles -u 1 \"src/**/*.css\" dist",
+    "clean": "rimraf dist *.tsbuildinfo",
+    "lint": "tsc --noEmit",
+    "prepack": "pnpm build",
+    "test": "vitest run"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "peerDependencies": {
+    "@zubricks/payload-admin-ui-themes": "^0.1.0",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "19.2.14",
+    "@zubricks/payload-admin-ui-themes": "link:../payload-admin-ui-themes",
+    "copyfiles": "2.4.1",
+    "react": "19.2.6",
+    "rimraf": "6.0.1",
+    "typescript": "6.0.3",
+    "vitest": "5.0.0"
+  },
+  "engines": {
+    "node": ">=24.15.0",
+    "pnpm": "^9 || ^10 || ^11"
+  }
+}
