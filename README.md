@@ -1,16 +1,13 @@
-<img width="1280" height="779" alt="payload-admin-dracula-theme" src="https://github.com/user-attachments/assets/07828e9e-b33d-468c-a121-9e73898a2550" />
+<img width="1200" height="801" alt="Dracula Theme" src="https://github.com/user-attachments/assets/44f79ecc-237b-4e56-aa01-46fd868d91b7" />
 
-# @zubricks/payload-admin-theme-dracula
+# Dracula Admin UI theme for Payload 4. 
+Dark mode uses Dracula Classic, while light mode uses the official Alucard Classic companion.
 
-Dracula Admin UI theme for Payload 4. Dark mode uses Dracula Classic, while light mode uses its
-official Alucard Classic companion.
-
-This is a theme package for `@zubricks/payload-admin-ui-themes`; it does not duplicate the core
-Payload plugin.
+<img width="934" height="612" alt="Dracula - Alucard - Light" src="https://github.com/user-attachments/assets/6a75c251-18e8-4c1b-b492-a6852cad8da2" />
 
 ## Install
 
-### Already using `@zubricks/payload-admin-ui-themes`
+### Already using `@zubricks/payload-admin-ui-themes`?
 
 Install only the Dracula theme package:
 
@@ -18,7 +15,7 @@ Install only the Dracula theme package:
 pnpm add @zubricks/payload-admin-theme-dracula
 ```
 
-### Starting without either package
+### Starting without either package?
 
 Install the core Admin UI themes plugin and the Dracula theme package together:
 
