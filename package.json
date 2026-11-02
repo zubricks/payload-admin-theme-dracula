@@ -21,7 +21,7 @@
   "files": [
     "dist",
     "README.md",
-    "LICENSE.md"
+    "LICENSE"
   ],
   "sideEffects": [
     "**/*.css"

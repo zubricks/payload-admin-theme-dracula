@@ -1,51 +1,37 @@
-<img width="1200" height="801" alt="Dracula Theme" src="https://github.com/user-attachments/assets/44f79ecc-237b-4e56-aa01-46fd868d91b7" />
+# Dracula for [Payload](https://payloadcms.com)
 
-# Dracula Admin UI theme for Payload 4. 
-Dark mode uses Dracula Classic, while light mode uses the official Alucard Classic companion.
+> A Dracula and Alucard theme for the [Payload](https://payloadcms.com) Admin UI.
 
-<img width="934" height="612" alt="Dracula - Alucard - Light" src="https://github.com/user-attachments/assets/6a75c251-18e8-4c1b-b492-a6852cad8da2" />
+![Dracula for Payload](./screenshot/01-dracula.png)
+
+![Alucard for Payload](./screenshot/02-alucard.png)
+
+Dark mode uses Dracula Classic. Light mode uses its official Alucard Classic companion.
 
 ## Install
 
-### Already using `@zubricks/payload-admin-ui-themes`?
+All instructions can be found at [draculatheme.com/payload](https://draculatheme.com/payload).
 
-Install only the Dracula theme package:
+## Team
 
-```bash
-pnpm add @zubricks/payload-admin-theme-dracula
-```
+This theme is maintained by the following person and a bunch of [awesome contributors](https://github.com/dracula/payload/graphs/contributors).
 
-### Starting without either package?
+| [![Sean Zubrickas](https://github.com/zubricks.png?size=100)](https://github.com/zubricks) |
+| ----------------------------------------------------------------------------------------- |
+| [Sean Zubrickas](https://github.com/zubricks)                                             |
 
-Install the core Admin UI themes plugin and the Dracula theme package together:
+## Community
 
-```bash
-pnpm add @zubricks/payload-admin-ui-themes @zubricks/payload-admin-theme-dracula
-```
+Join thousands of vampires using Dracula Theme around the world 🦇
 
-## Configure
+- [X (Twitter)](https://x.com/draculatheme) and [Instagram](https://www.instagram.com/draculatheme) - Follow for tips, news, and fun.
+- [Discord](https://draculatheme.com/discord-invite) - Hang out and chat with the rest of the clan.
+- [GitHub Discussions](https://github.com/dracula/dracula-theme/discussions) - Ask questions and discuss issues.
 
-```ts
-import { draculaTheme } from "@zubricks/payload-admin-theme-dracula";
-import { payloadAdminUIThemes } from "@zubricks/payload-admin-ui-themes";
+## Dracula PRO
 
-export default buildConfig({
-  plugins: [
-    payloadAdminUIThemes({
-      defaultTheme: "dracula",
-      themes: [draculaTheme],
-    }),
-  ],
-});
-```
+[![Dracula PRO](./.github/dracula-pro.png)](https://draculatheme.com/pro)
 
-Payload's light/dark setting chooses between the two official variants:
+## License
 
-- Dark: Dracula Classic
-- Light: Alucard Classic
-
-The implementation follows the exact colors and UI guidance in the
-[official Dracula specification](https://draculatheme.com/spec).
-
-This package is an independent Payload port and is not currently an official Dracula organization
-project.
+[MIT License](./LICENSE)
